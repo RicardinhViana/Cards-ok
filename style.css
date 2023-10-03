@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    width: 1150px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container .card{
+    position: relative;
+    padding: 10px;
+    width: 300px;
+    background-color: #dbdadab7;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.6s;
+    text-align: center;
+}
+
+.container .card img{
+    transition: o.6s;
+}
+
+.container .card h1{
+    font-size: 2rem;
+}
+
+.container .card .content{
+    padding: 20px;
+    text-align: center;
+}
+
+.container .card .content p{
+    color: black;
+    transition: 0.6s;
+}
+
+.container .card .content a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #f7f7f7;
+    border-radius: 10px;
+    text-decoration: none;
+    outline: none;
+    transition: 0.6s;
+    margin-top: 20px;
+}
+
+.container .card:hover{
+    background-color: gold;
+    color:black;
+    margin-top: 50px;
+    box-shadow: 20px 20px 20px goldenrod;
+    border-color: black;
+}
+
+.container .card:hover img{
+    filter: invert(1);
+}
+
+.container .card:hover .content p{
+    color: black;
+}
+
+.container .card:hover .content a{
+    color: white;
+    border-radius: 20px;
+    transition: 0.6s;
+}
